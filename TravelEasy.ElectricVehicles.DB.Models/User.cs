@@ -13,10 +13,8 @@ namespace TravelEasy.ElectricVehicles.DB.Models
         public int Id { get; set; }
 
         [Required]
-        public string FirstName { get; set; }
+        public string Username { get; set; }
 
-        [Required]
-        public string LastName { get; set; }
 
         [Required]
         [EmailAddress]
@@ -25,8 +23,5 @@ namespace TravelEasy.ElectricVehicles.DB.Models
         [Required]
         public string Password { get; set; }
 
-        [Required]
-        [Phone]
-        public string PhoneNumber { get; set; }
     }
 }
