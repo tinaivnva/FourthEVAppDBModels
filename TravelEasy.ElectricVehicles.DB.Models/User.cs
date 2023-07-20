@@ -10,6 +10,7 @@ namespace TravelEasy.ElectricVehicles.DB.Models
     public class User
     {
         [Required]
+        //max and min chars
         public int Id { get; set; }
 
         [Required]
@@ -21,6 +22,7 @@ namespace TravelEasy.ElectricVehicles.DB.Models
         public string Email { get; set; }
 
         [Required]
+        //max and min chars
         public string Password { get; set; }
 
     }
