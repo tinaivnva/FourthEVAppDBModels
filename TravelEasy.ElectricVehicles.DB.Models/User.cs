@@ -9,8 +9,7 @@ namespace TravelEasy.ElectricVehicles.DB.Models
 {
     public class User
     {
-        [Required]
-        //max and min chars
+        [Key]
         public int Id { get; set; }
 
         [Required]
