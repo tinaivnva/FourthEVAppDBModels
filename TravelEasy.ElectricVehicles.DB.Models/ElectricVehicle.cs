@@ -13,5 +13,6 @@
         public int Range { get; set; }
 
         public decimal PricePerDay { get; set; }
+        public bool IsBooked { get; set; }  = false;
     }
 }
