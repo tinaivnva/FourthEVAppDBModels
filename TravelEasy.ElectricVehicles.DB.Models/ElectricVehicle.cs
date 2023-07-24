@@ -14,5 +14,6 @@
 
         public decimal PricePerDay { get; set; }
         public bool IsBooked { get; set; }  = false;
+        public byte ImageData { get; set; }
     }
 }
