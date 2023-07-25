@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,5 +11,6 @@ namespace TravelEasy.ElectricVehicles.DB.Models
     {
         public int UsertId { get; set; }
         public int CarId { get; set; }
+        public 
     }
 }

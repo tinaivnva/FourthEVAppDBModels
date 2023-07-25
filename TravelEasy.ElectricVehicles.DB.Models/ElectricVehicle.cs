@@ -1,8 +1,12 @@
-﻿namespace TravelEasy.ElectricVehicles.DB.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
+
+namespace TravelEasy.ElectricVehicles.DB.Models
 {
     public class ElectricVehicle
     {
-        public int Id { get; set; }
+        [Key] 
+        public int CarId { get; set; }
 
         public string? Brand { get; set; }
 
@@ -13,6 +17,8 @@
         public int Range { get; set; }
 
         public decimal PricePerDay { get; set; }
-        public bool IsBooked { get; set; }  = false;
+        public string Category { get; set; }
+
+        public string Image { get; set; }
     }
 }
