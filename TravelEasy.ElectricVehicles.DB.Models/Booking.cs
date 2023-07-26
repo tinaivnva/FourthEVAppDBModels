@@ -12,10 +12,15 @@ namespace TravelEasy.ElectricVehicles.DB.Models
     {
         [Key]
         public int Id { get; set; }
+        [ForeignKey("UserId")]
         public int UsertId { get; set; }
+
+        [ForeignKey("CarId")]
         public int CarId { get; set; } 
         public DateTime FromDate {get; set; }
         public DateTime ToDate { get; set; }
-
+        
+        User user { get; set; }
+        ElectricVehicle electricVehicle { get; set; }
     }
 }
