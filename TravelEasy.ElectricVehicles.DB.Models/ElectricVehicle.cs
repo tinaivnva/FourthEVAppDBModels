@@ -18,11 +18,11 @@ namespace TravelEasy.ElectricVehicles.DB.Models
 
         public decimal PricePerDay { get; set; }
 
-        [ForeignKey("Category")]
-        public string Category { get; set; }
+        [ForeignKey("CategoryId")]
+        public int CategoryId { get; set; }
 
         public string Image { get; set; }
 
-        public Category category { get; set; }
+        public Category Category { get; set; }
     }
 }

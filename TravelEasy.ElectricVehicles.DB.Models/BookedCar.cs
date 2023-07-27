@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TravelEasy.ElectricVehicles.DB.Models
 {
-    public class BookACar
+    public class BookedCar
     {
         [Key]
         public int Id { get; set; }
