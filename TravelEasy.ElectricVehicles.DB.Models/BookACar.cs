@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TravelEasy.ElectricVehicles.DB.Models
 {
-    public class Booking
+    public class BookACar
     {
         [Key]
         public int Id { get; set; }
@@ -20,7 +15,7 @@ namespace TravelEasy.ElectricVehicles.DB.Models
         public DateTime FromDate {get; set; }
         public DateTime ToDate { get; set; }
         
-        User user { get; set; }
-        ElectricVehicle electricVehicle { get; set; }
+        public User User { get; set; }
+        public ElectricVehicle ElectricVehicle { get; set; }
     }
 }

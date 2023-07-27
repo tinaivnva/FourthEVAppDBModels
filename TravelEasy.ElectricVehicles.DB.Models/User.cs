@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TravelEasy.ElectricVehicles.DB.Models
 {
@@ -21,7 +16,6 @@ namespace TravelEasy.ElectricVehicles.DB.Models
         public string Email { get; set; }
 
         [Required]
-        //max and min chars
         public string Password { get; set; }
 
     }
