@@ -5,8 +5,10 @@ namespace TravelEasy.ElectricVehicles.DB.Models
 {
     public class BookedCar
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Id { get; set; }
+
         [ForeignKey("UserId")]
         public int UsertId { get; set; }
 
